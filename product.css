@@ -1,0 +1,93 @@
+.product__items {
+    display: flex;
+    padding: 1em 1.5em 0.2em 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.product__items--starwars--list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.product__title--See--all {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.product__test {
+    padding: 1em;
+}
+
+.product__XYZ {
+    padding-top: 0.5em;
+    font-size: 14px;
+}
+
+.product__XYZ--price {
+    padding: 1em 0;
+    font-size: 16px;
+}
+
+.product__XYZ--link {
+    padding: 0.5em 0;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product__items--console--list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product__items--starwars__5, .product__items--starwars__6 {
+    display: none;
+}
+
+.product__items--console__5, .product__items--console__6 {
+    display: none;
+}
+
+.product__items--diversos__5, .product__items--diversos__6 {
+    display: none;
+}
+
+
+@media screen and (min-width: 769px) {
+    .product__items--starwars--list {
+        flex-wrap: nowrap;
+    }
+
+    .product__list {
+        padding: 0.2em;
+    }
+    
+    .product__items--starwars__5, .product__items--starwars__6 {
+       display: grid;
+    }
+
+    .product__items--console__5, .product__items--console__6 {
+        display: grid;
+    }
+    
+    .product__items--diversos__5, .product__items--diversos__6 {
+        display: grid;
+    }
+
+    .product__items {
+        padding: 3em 10em 1em 10em;
+    }
+
+    .product__items--diversos__6 {
+        padding-bottom: 3em;
+    }
+
+
+
+}
